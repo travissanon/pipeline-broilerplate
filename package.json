@@ -1,0 +1,54 @@
+{
+  "name": "pipeline-broilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "docker-compose -f docker-compose.dev.yml up",
+    "build-dev": "webpack -w",
+    "serve-dev": "nodemon src/server/server.js",
+    "lint:styles": "npx stylelint \"**/*.scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travissanon/pipeline-broilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/travissanon/pipeline-broilerplate/issues"
+  },
+  "homepage": "https://github.com/travissanon/pipeline-broilerplate#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "dotenv-webpack": "^7.1.0",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^27.5.1",
+    "stylelint": "^14.3.0",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "babel-jest": "^27.5.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "rollbar": "^2.24.0",
+    "ts-jest": "^27.1.3"
+  }
+}

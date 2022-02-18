@@ -1,0 +1,1 @@
+(()=>{"use strict";require("dotenv").config();var e=new(require("rollbar"))({accessToken:"7d949ef23df04b92810c50eb1c48d570",captureUncaught:!0,captureUnhandledRejections:!0});e.log("Hello world!"),e.error("Hello, this is an error")})();
